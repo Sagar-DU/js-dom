@@ -21,7 +21,7 @@
                     <p>Nisi odio neque quidem? Aperiam quam nisi, nesciunt laboriosam in mollitia. Mollitia quae, reiciendis laborum, iste harum blanditiis repellat debitis odio quas, earum eveniet officia excepturi dolore unde sequi eos veniam? Unde at quos tempora quia facilis aperiam quas vitae eaque dolores.</p>
                 </article>
                 <article>
-                    <h3>My Cool Blog - 3</h3>
+                    <h3 id="third-title">My Cool Blog - 3</h3>
                     <p>Fugit odio magni ipsum corrupti perspiciatis cum quaerat delectus reiciendis recusandae quidem neque maxime sit inventore culpa, sint officiis vitae dolorum quas ratione animi quibusdam odit est. Ea beatae odio fugit vero, hic officiis quas ex qui reiciendis. Repudiandae cumque deleniti blanditiis.</p>
                 </article>
                 <article>
@@ -44,7 +44,17 @@
             console.log(p.innerText);
         }
         //Styling with JavaScript
-        document.getElementById("second-title").style.color = "Green";
+        const secondTitle = document.getElementById("second-title");
+
+        secondTitle.style.color = "Green";
+        secondTitle.style.textAlign = "center";
+
+        let thirdTitle = document.getElementById("third-title");
+
+        thirdTitle.innerText = "Changed with JavaScript";
+        thirdTitle.style.backgroundColor = "lightGreen";
+        thirdTitle.style.padding = "10px";
+        thirdTitle.style.marginLeft = "20px";
 
     </script>
 </body>
