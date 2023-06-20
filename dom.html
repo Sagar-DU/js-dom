@@ -82,6 +82,7 @@
         const article = document.createElement("article");
         article.classList.add("blog");
         
+        /*
         const h3 = document.createElement("h3");
         h3.innerText = "My Cool Blog - 5";
 
@@ -89,7 +90,13 @@
         p.innerText = "Fugit odio magni ipsum corrupti perspiciatis cum quaerat delectus reiciendis recusandae quidem neque maxime sit inventore culpa, sint officiis vitae dolorum quas ratione animi quibusdam odit est.";
 
         article.appendChild(h3);
-        article.appendChild(p);
+        article.appendChild(p); */
+
+        //Another way with easy innetHTML
+        article.innerHTML = `
+        <h3>My Cool Blog 5</h3>
+        <p>lorem ai eao e fow aewfj aweofa wfojw aweofj aofh waiufh wiufh iwae fu awifh wfh waehfwe whf wf iuewhfewhfiwue fwuiefiuiue fwafwwah fwfwaiuhf wefiuwahf ewf iuwhfawf iwauffwleiuhf ui fawiu fuif weifh uwi fwh fwiuf whlieu fhbkjwhf fwjf hwioe h weofh w0efh whfe w.</p>
+        `
 
         //Adding to my HTML
         const articleSection = document.getElementById("blogs");
