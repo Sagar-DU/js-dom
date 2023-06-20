@@ -11,7 +11,18 @@
             <h1>Welcome to my blog</h1>
         </header>
         <main>
-            <section>
+            <!-- Blog section starts here  -->
+            <section class="blogs">
+                <header>
+                    <ul id="blog-list">
+                        <li>Blog 1</li>
+                        <li>Blog 2</li>
+                        <li>Blog 3</li>
+                        <li>Blog 4</li>
+                    </ul>
+                </header>
+            </section>
+            <section id="blogs">
                 <article class="blog">
                     <h3>My Cool Blog - 1</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam eum autem, ad at excepturi deserunt sint ducimus, dicta officia aspernatur dolore molestias obcaecati deleniti laboriosam eos asperiores saepe. Aperiam commodi quasi quia, adipisci dolorum fuga id ea perferendis illo animi sint exercitationem.</p>
@@ -57,6 +68,33 @@
         thirdTitle.style.padding = "10px";
         thirdTitle.style.marginLeft = "20px";
 
+        // Create an element with JS 
+
+        // First create the element 
+        const li = document.createElement("li");
+        li.innerText = "Blog 5";
+
+        // Where to put it 
+        const ul = document.getElementById("blog-list");
+        ul.appendChild(li);
+
+        //Let's add something more
+        const article = document.createElement("article");
+        article.classList.add("blog");
+        
+        const h3 = document.createElement("h3");
+        h3.innerText = "My Cool Blog - 5";
+
+        const p = document.createElement("p");
+        p.innerText = "Fugit odio magni ipsum corrupti perspiciatis cum quaerat delectus reiciendis recusandae quidem neque maxime sit inventore culpa, sint officiis vitae dolorum quas ratione animi quibusdam odit est.";
+
+        article.appendChild(h3);
+        article.appendChild(p);
+
+        //Adding to my HTML
+        const articleSection = document.getElementById("blogs");
+        articleSection.appendChild(article);
+
         //getElementsByClass
         const blogs = document.getElementsByClassName("blog");
         for (let blog of blogs){
@@ -66,6 +104,8 @@
             blog.style.margin = "5px";
             blog.style.borderRadius = "10px"
         }
+        
+
 
     </script>
 </body>
